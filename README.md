@@ -1,10 +1,12 @@
-# 🏦 INVESTOR-AGENT: High-Conviction Hedge Fund PM
+# Financial Decision Making Using Price And News Context - FinMMEval Lab (CLEF 2026)
 
-This repository implements an autonomous trading agent designed as a **High-Conviction Hedge Fund Portfolio Manager**. It specializes in capturing Alpha by identifying significant Catalyst Magnitude and Expectation Variance across multiple assets (BTC & TSLA).
+## INVESTOR-AGENT
+
+This repository implements an autonomous trading agent. It specializes in capturing Alpha by identifying significant Catalyst Magnitude and Expectation Variance across multiple assets (BTC & TSLA).
 
 ---
 
-## 🚀 Step-by-Step Setup Guide
+## Step-by-Step Setup Guide
 
 Follow these steps to get the system running on your local machine.
 
@@ -15,6 +17,7 @@ Since the system uses **Llama 3.3 70B**, you need a Hugging Face account and a t
 2.  **Generate Token**:
     *   Log in to [Hugging Face](https://huggingface.co/).
     *   Go to **Settings** -> **Access Tokens**.
+    *   Access Token -> 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
     *   Click **New Token**, name it (e.g., `InvestorAgent`), and set the type to **Read**.
     *   Copy the token; you will need it later.
 
