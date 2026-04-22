@@ -1,0 +1,17 @@
+typer
+rich
+loguru
+pydantic
+orjson
+python-dotenv
+qdrant-client
+sentence-transformers
+transformers
+accelerate
+datasets
+pandas
+numpy
+cvxpy
+guardrails-ai
+fastapi
+uvicorn

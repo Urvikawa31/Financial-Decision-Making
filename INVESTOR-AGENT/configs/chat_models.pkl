@@ -1,0 +1,23 @@
+class ChatModelConfig {
+    chat_model: String
+    chat_model_type: String
+    chat_model_inference_engine: String
+    chat_endpoint: String
+    chat_system_message: String
+    chat_parameters: Mapping
+}
+
+llama_local: ChatModelConfig = new {
+    chat_model = "llama3.1:8b"
+    chat_model_type = "chat"
+    chat_model_inference_engine = "ollama"
+    chat_endpoint = "http://localhost:11434/api/generate"
+    chat_system_message = "You are a professional financial trading expert."
+    chat_parameters = new Mapping {
+        ["temperature"] = 0.2
+    }
+}
+
+chat_model_dict = new Mapping {
+    ["llama-local"] = llama_local
+}

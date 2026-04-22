@@ -1,0 +1,13 @@
+class EmbEndpointConfig {
+  emb_model_name: String
+  emb_size: Int(this > 0)
+}
+
+bge_small: EmbEndpointConfig = new {
+  emb_model_name = "BAAI/bge-small-en-v1.5"
+  emb_size = 384
+}
+
+embedding_models = new Mapping {
+  ["bge-small"] = bge_small
+}

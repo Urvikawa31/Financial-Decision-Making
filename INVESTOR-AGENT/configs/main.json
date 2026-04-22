@@ -1,0 +1,101 @@
+{
+    "chat_config": {
+        "chat_model": "meta-llama/Llama-3.3-70B-Instruct",
+        "chat_model_type": "chat",
+        "chat_model_inference_engine": "local",
+        "chat_system_message": "You are a High-Conviction Hedge Fund Portfolio Manager. You specialize in capturing Alpha by identifying significant Catalyst Magnitude and Expectation Variance. You treat 'mixed signals' as an opportunity to identify the dominant structural driver. You never default to 'HOLD' unless the market is closed or holidays apply.",
+        "chat_parameters": {
+            "temperature": 0.2
+        },
+        "chat_max_new_token": 2048,
+        "chat_request_timeout": 1000,
+        "chat_endpoint": null
+    },
+    "emb_config": {
+        "emb_model_name": "bge-small",
+        "emb_size": 384,
+        "embedding_timeout": 600
+    },
+    "env_config": {
+        "trading_symbols": [
+            "BTC",
+            "TSLA"
+        ],
+        "warmup_start_time": "2025-08-01",
+        "warmup_end_time": "2025-12-31",
+        "test_start_time": "2026-01-01",
+        "test_end_time": "2026-02-28",
+        "momentum_window_size": 3,
+        "env_data_path": {
+            "BTC": "data/btc.json",
+            "TSLA": "data/tsla.json"
+        }
+    },
+    "portfolio_config": {
+        "trading_symbols": [
+            "BTC",
+            "TSLA"
+        ],
+        "type": "multi-assets",
+        "cash": 100000,
+        "look_back_window_size": 3
+    },
+    "agent_config": {
+        "agent_name": "agent",
+        "trading_symbols": [
+            "BTC",
+            "TSLA"
+        ],
+        "top_k": 5,
+        "character_string": {
+            "BTC": "You are the Head of Digital Assets for a Global Macro Fund. Focus on liquidity clusters, institutional ETF flows, and network resilience. Capture Alpha from volatility; ignore retail noise.",
+            "TSLA": "You are a skeptical Senior Equity Analyst specializing in Tesla. Focus on unit-delivery variance, margin compression, and FSD monetization. Prioritize immediate execution and competitive threats over historical narratives."
+        },
+        "memory_db_config": {
+            "memory_db_endpoint": "http://localhost:6333",
+            "memory_importance_score_update_step": 0.1,
+            "memory_importance_upper_bound": 10,
+            "short": {
+                "importance_init_val": 1,
+                "decay_importance_factor": 0.9,
+                "decay_recency_factor": 10,
+                "clean_up_importance_threshold": 0.1,
+                "clean_up_recency_threshold": 0.1,
+                "jump_upper_threshold": 5
+            },
+            "mid": {
+                "importance_init_val": 2,
+                "decay_importance_factor": 0.95,
+                "decay_recency_factor": 20,
+                "clean_up_importance_threshold": 0.1,
+                "clean_up_recency_threshold": 0.1,
+                "jump_upper_threshold": 7,
+                "jump_lower_threshold": 2
+            },
+            "long": {
+                "importance_init_val": 3,
+                "decay_importance_factor": 0.98,
+                "decay_recency_factor": 50,
+                "clean_up_importance_threshold": 0.1,
+                "clean_up_recency_threshold": 0.1,
+                "jump_lower_threshold": 3
+            },
+            "reflection": {
+                "importance_init_val": 2,
+                "decay_importance_factor": 0.95,
+                "decay_recency_factor": 20,
+                "clean_up_importance_threshold": 0.1,
+                "clean_up_recency_threshold": 0.1,
+                "similarity_threshold": 0.8
+            }
+        }
+    },
+    "meta_config": {
+        "warmup_checkpoint_save_path": "checkpoints/warmup",
+        "warmup_output_save_path": "outputs/warmup",
+        "test_checkpoint_save_path": "checkpoints/test",
+        "test_output_save_path": "outputs/test",
+        "result_save_path": "results",
+        "log_save_path": "logs"
+    }
+}

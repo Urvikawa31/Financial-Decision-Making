@@ -1,0 +1,28 @@
+MODEL INFO
+----------------------
+Model Used: martain7r/finance-llama-8b:q4_k_m
+
+INDIVIDUAL ASSET METRICS
+
+BTC
+----------------------
+Cumulative Return: -0.1899
+Sharpe Ratio: -2.3164
+Max Drawdown: 0.2765
+Volatility: 0.2984
+
+TSLA
+----------------------
+Cumulative Return: 0.0096
+Sharpe Ratio: 0.5385
+Max Drawdown: 0.0146
+Volatility: 0.0662
+
+
+PORTFOLIO METRICS
+
+               Metric  Equal Weight Portfolio  Agent Portfolio
+    Cumulative Return               -0.198432        -0.090141
+         Sharpe Ratio               -1.232636        -2.178873
+         Max Drawdown                0.351815         0.142014
+Annualized Volatility                0.517398         0.146690

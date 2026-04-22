@@ -1,0 +1,4 @@
+env_data_dict = new Mapping {
+["btc"] = "data/btc.json"
+["tsla"] = "data/tsla.json"
+}

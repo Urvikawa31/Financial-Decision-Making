@@ -1,0 +1,28 @@
+MODEL INFO
+----------------------
+Model Used: llama3.1:8b
+
+INDIVIDUAL ASSET METRICS
+
+BTC
+----------------------
+Cumulative Return: -0.2186
+Sharpe Ratio: -2.5285
+Max Drawdown: 0.3090
+Volatility: 0.3205
+
+TSLA
+----------------------
+Cumulative Return: -0.0200
+Sharpe Ratio: -1.7295
+Max Drawdown: 0.0259
+Volatility: 0.0404
+
+
+PORTFOLIO METRICS
+
+               Metric  Equal Weight Portfolio  Agent Portfolio
+    Cumulative Return               -0.198432        -0.119293
+         Sharpe Ratio               -1.232636        -2.784045
+         Max Drawdown                0.351815         0.173354
+Annualized Volatility                0.517398         0.155218

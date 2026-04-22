@@ -1,0 +1,28 @@
+MODEL INFO
+----------------------
+Model Used: 0xroyce/plutus:latest
+
+INDIVIDUAL ASSET METRICS
+
+BTC
+----------------------
+Cumulative Return: -0.2591
+Sharpe Ratio: -2.0415
+Max Drawdown: 0.3529
+Volatility: 0.4601
+
+TSLA
+----------------------
+Cumulative Return: 0.0176
+Sharpe Ratio: 0.9251
+Max Drawdown: 0.0203
+Volatility: 0.0684
+
+
+PORTFOLIO METRICS
+
+               Metric  Equal Weight Portfolio  Agent Portfolio
+    Cumulative Return               -0.198432        -0.120749
+         Sharpe Ratio               -1.232636        -1.997148
+         Max Drawdown                0.351815         0.185603
+Annualized Volatility                0.517398         0.213772
