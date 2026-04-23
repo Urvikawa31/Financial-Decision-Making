@@ -17,7 +17,6 @@ Since the system uses **Llama 3.3 70B**, you need a Hugging Face account and a t
 2.  **Generate Token**:
     *   Log in to [Hugging Face](https://huggingface.co/).
     *   Go to **Settings** -> **Access Tokens**.
-    *   Access Token -> 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
     *   Click **New Token**, name it (e.g., `InvestorAgent`), and set the type to **Read**.
     *   Copy the token; you will need it later.
 
