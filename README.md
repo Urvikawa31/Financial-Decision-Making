@@ -1,6 +1,6 @@
 # Financial Decision Making Using Price And News Context - FinMMEval Lab (CLEF 2026)
 
-## INVESTOR-AGENT
+## EdgeQuant-Agent
 
 This repository implements an autonomous trading agent. It specializes in capturing Alpha by identifying significant Catalyst Magnitude and Expectation Variance across multiple assets (BTC & TSLA).
 
